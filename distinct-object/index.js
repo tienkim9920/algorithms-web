@@ -2,6 +2,10 @@ const setDistinctArrayObjectField = (data, field) => {
   return [...new Map(data?.map((item) => [item[field], item])).values()];
 };
 
+const setDistinctArrayFullObject = (data) => {
+  return [...new Set(data.map(JSON.stringify))].map(JSON.parse);
+}
+
 const arr_object = [
   { email: "dat", date: new Date(), price: 50 },
   { email: "dat", date: new Date(), price: 50 },
