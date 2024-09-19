@@ -1,0 +1,18 @@
+<div class="d-flex flex-column">
+  <span>When customers Register/Cancel automatically deposit cash withdrawal:</span>
+  <span class="heading-text text-primary">1. Automatically cash deposit from Futures to Margin account (VSD)</span>
+  <div class="ml-2 d-flex flex-column">
+    <span class="content-text">- Money balance on Derivative account (includes deposit, VM interest ... NOT including
+      margin withdrawal within a day) will be automatically transferred to margin account (VSD) when the balances
+      greater than minimum collateral management fee (currently 100,000) and/or total unpaid tax at TCSC.</span>
+    <span class="content-text">- Time for automatic deposit transfer: From ${DEPOSIT_AUTO_BEGIN_TIME} to ${DEPOSIT_AUTO_END_TIME} on trading days.</span>
+  </div>
+  <span class="heading-text text-primary">2. Automatically cash withdrawal from Margin (VSD) to Futures account</span>
+  <div class="ml-2 d-flex flex-column">
+    <span class="content-text">- The money on the margin account (VSD) after deducting the retained VSD obligations will
+      be automatically transferred to Futures at TCSC.</span>
+    <span class="content-text">- Automatic withdrawal time: From ${WITHDRAW_AUTO_BEGIN_TIME} to ${WITHDRAW_AUTO_END_TIME} on trading days.</span>
+  </div>
+  <span class="heading-text text-primary">3. Deposit/cash withdrawal fee is regulated by VTB and customer bears this
+    fee: ${FEEDEPOSITANDWITHDRAW} VND/time deposit/withdrawal.</span>
+</div>
